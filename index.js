@@ -40,7 +40,8 @@ const licenseChoices = {
     "SIL Open Font License 1.1": "OFL-1.1",
     "University of Illinois/NCSA Open Source License": "NCSA",
     "The Unlicense": "Unlicense",
-    "zLib License": "Zlib"
+    "zLib License": "Zlib",
+    "N/A": "N/A"
 }
 
 // Creating an array of license names for our inquirer license list choices
