@@ -22,10 +22,17 @@ function generateMarkdown(data) {
 
   const licenseSection = renderLicenseSection(data.license)
 
-  let mediaMarkdown = '';
-  if (data.media[0] !== 'N/A') {
-    for (let i = 0; i < data.media.length; i++) {
-      mediaMarkdown += `![${data.alt[i]}](${data.media[i]})\n\n`
+  let imageMarkdown = '';
+  if (data.image[0] !== 'N/A') {
+    for (let i = 0; i < data.image.length; i++) {
+      imageMarkdown += `![${data.alt[i]}](${data.image[i]})\n\n`
+    }
+  }
+
+  let videoMarkdown = '';
+  if (data.video[0] !== 'N/A') {
+    for (let i = 0; i < data.video.length; i++) {
+      videoMarkdown += `[${data.videoText[i]}](${data.video[i]})\n\n`
     }
   }
 
@@ -58,7 +65,7 @@ let tableOfContentsEnd = `
 [Questions](#questions)
 `
 
-  if (data.media[0] !== 'N/A') {
+  if (data.image[0] !== 'N/A' || data.video[0] !== 'N/A') {
     tableOfContentsStart += `\n[Media of Application](#media-for-application)`;
   }
 
@@ -80,10 +87,11 @@ ${tableOfContentsEnd}
 
 [Live ${data.title}](${data.site})
 
-${data.media[0] !== 'N/A' ? `
+${(data.image[0] !== 'N/A' || data.video[0] !== 'N/A') ? `
 ## Media for Application
 
-${mediaMarkdown}` : ''}
+${imageMarkdown}
+${videoMarkdown}` : ''}
 
 ## Purpose
 

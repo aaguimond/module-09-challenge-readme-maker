@@ -85,21 +85,39 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'media',
-        message: 'Please input any links to screenshots or video of your project, separating each with a comma, or if there are none, press enter or enter "N/A".',
+        name: 'image',
+        message: 'Please input any links to images for your project, separating each with a comma, or if there are none, press enter or enter "N/A".',
         default: 'N/A',
         filter: function(value) {
-            return value.split(',').map(link => link.trim());
+            return value.split(',').map(image => image.trim());
         }
     },
     {
         type: 'input',
         name: 'alt',
-        message: 'Please input any alt text for your media, separating each with a comma, or if there is none, press enter or enter "N/A".',
+        message: 'Please input any alt text for your respective images, separating each with a comma, or if there is none, press enter or enter "N/A".',
         default: 'N/A',
         filter: function(value) {
             return value.split(',').map(alt => alt.trim());
         }   
+    },
+    {
+        type: 'input',
+        name: 'video',
+        message: 'Please input any links to video for your project, separating each with a comma, or if there are none, press enter or enter "N/A".',
+        default: 'N/A',
+        filter: function(value) {
+            return value.split(',').map(video => video.trim());
+        }
+    },
+    {
+        type: 'input',
+        name: 'videoText',
+        message: 'Please input text to describe the respective video links for your project, separating each with a comma, or if there are none, press enter or enter "N/A".',
+        default: 'N/A',
+        filter: function(value) {
+            return value.split(',').map(videoText => videoText.trim());
+        }
     },
     {
         type: 'input',
