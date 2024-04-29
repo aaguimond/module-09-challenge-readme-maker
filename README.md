@@ -40,7 +40,7 @@
 
 ## Media for Application
 
-![A screenshot of the questions and answers for the application](https://drive.google.com/uc?id=17z7B--izfu3Z0mz27jET8YViHE5rNm_O.png)
+![A screenshot of the questions and answers for the application](https://github.com/aaguimond/module-09-challenge-readme-maker/blob/78fd5910bf7baadde9778acba03342b1363e1023/screenshots/READMEGeneratorExampleScreenshotFullQandA.png?raw=true)
 
 
 
