@@ -15,7 +15,7 @@ function renderLicenseSection(license) {
     return `This project is licensed under the [${license}](https://opensource.org/licenses/${license}) license.`
 }}
 
-// TODO: Create a function to generate markdown for README
+// Generating our markdown for the README
 function generateMarkdown(data) {
 
   const licenseBadge = renderLicenseBadge(data.license)
@@ -130,4 +130,5 @@ Please reach out to me with any questions:
   `;
 }
 
+// Making the markdown function available to our index file
 module.exports = generateMarkdown;
