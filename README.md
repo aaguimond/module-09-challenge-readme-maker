@@ -35,15 +35,13 @@
 
 [GitHub Repository](https://github.com/aaguimond/module-09-challenge-readme-maker)
 
-[Live Professional README Generator](N/A)
-
-
 ## Media for Application
 
 ![A screenshot of the questions and answers for the application](https://github.com/aaguimond/module-09-challenge-readme-maker/blob/78fd5910bf7baadde9778acba03342b1363e1023/screenshots/READMEGeneratorExampleScreenshotFullQandA.png?raw=true)
 
+[A screenshot of an example completed README file](https://github.com/aaguimond/module-09-challenge-readme-maker/blob/ad0d47cd9ca7609e9eaa5f9e65f1c803abe82c6f/screenshots/READMEGeneratorCompletedREADME.png?raw=true)
 
-
+[Video demonstrating the functionality of the README generator](https://drive.google.com/file/d/1vwf27kb_if1lLkfKSwNG5YxdrUNZB0aZ/view?usp=sharing)
 
 ## Purpose
 
@@ -60,7 +58,7 @@ After installing the necessary packages and initializing the code, the applicati
 ## Credits
 
 * npm to run Node.js
-* Inquirer version 8.2.4
+* Inquirer versions 8.2.4
 * VS Code
 * GitBash
 * GitHub
